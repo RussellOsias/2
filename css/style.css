@@ -1,0 +1,123 @@
+/* Resetting margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background for better readability */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+}
+
+/* Container for the layout */
+.container {
+    display: flex;
+    max-width: 1200px; /* Centering the content */
+    margin: 20px auto;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px; /* Slightly wider sidebar */
+    background-color: #007BFF; /* Blue background for sidebar */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sidebar h2 {
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 15px; /* Spacing */
+}
+
+.sidebar a {
+    color: #fff; /* White links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Full width clickable area */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for links */
+    margin-bottom: 10px; /* Spacing between links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/* Content area styles */
+.content {
+    flex-grow: 1; /* Take remaining space */
+    padding: 20px;
+    background-color: #fff; /* White background for content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-left: 20px; /* Space between sidebar and content */
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #007BFF; /* Consistent heading color */
+}
+
+h1 {
+    font-size: 32px; /* Larger main heading */
+    margin-bottom: 20px; /* Spacing below */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Space above the table */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Border for table */
+}
+
+th, td {
+    padding: 12px; /* Increased padding */
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF; /* Table header background */
+    color: #fff; /* White text for header */
+    font-weight: bold; /* Bold font for header */
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        margin-bottom: 20px; /* Spacing below sidebar */
+    }
+
+    .content {
+        margin-left: 0; /* No margin for content */
+    }
+}
